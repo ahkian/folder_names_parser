@@ -16,14 +16,14 @@ def parse_file_name ():
         else:
             print("That is not a valid input")
     # This is where parsing happens
-    output_file = open('C:\Users\dbrazel\Desktop\parser_output.txt', 'w')
+    output_file = open('/Users/danielbrazel/Desktop/parser_output.txt', 'w')
     cwd = os.getcwd()
     my_files = os.listdir(cwd)
     for f in my_files:
         output_file.write(f + ", ")
         print(f)
     output_file.close()
-    
-    
-    
+
+
+
 parse_file_name()
